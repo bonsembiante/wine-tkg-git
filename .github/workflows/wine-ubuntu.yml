@@ -1,13 +1,11 @@
 name: Wine Ubuntu CI
 
 on:
-  schedule:
-    - cron:  '25 9,21 * * *'
   workflow_dispatch:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
 
